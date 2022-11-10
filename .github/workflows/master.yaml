@@ -30,7 +30,7 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push --set-upstream https://github.com/thyybrandao/clube_lp.git master
+          git push -f git@github.com:thyybrandao/clube_lp.git
       - name: 📂 Sync filessd
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
