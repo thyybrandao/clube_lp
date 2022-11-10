@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: setup git auth
+      - name: setup git auths
         env:
           email: thyybr@gmail.com
           username: thyybrandao
