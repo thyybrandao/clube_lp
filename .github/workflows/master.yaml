@@ -27,14 +27,13 @@ jobs:
           npm i
           NODE_ENV=production npm run build
           cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push --set-upstream git@github.com:thyybrandao/clube_lp.git master
-      - name: 📂 Sync filessd
-        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      - uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
-          server: ftp.codeslayers.com.br
-          username: u667992605.thyy
-          password: 22041991zX!
-          server-dir: public_html/rei/lp/
+          ftp_host: ftp.codeslayers.com.br
+          ftp_username: u667992605.thyy
+          ftp_password: 22041991zX!
+          local_source_dir: "dist"
+          dist_target_dir: "public_html/rei/lp/"
+          delete: "true"
+          exclude: "'^logs/' '^README.md'"  
+      
