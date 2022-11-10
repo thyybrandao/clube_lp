@@ -27,10 +27,6 @@ jobs:
           npm i
           NODE_ENV=production npm run build
           cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push --set-upstream git@github.com:thyybrandao/clube_lp.git master
       - name: 📂 Sync filessd
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
