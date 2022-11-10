@@ -31,7 +31,7 @@ jobs:
           ftp_host: ftp.codeslayers.com.br
           ftp_username: u667992605.thyy
           ftp_password: 22041991zX!
-          local_source_dir: "dist"
+          local_source_dir: "dist/"
           dist_target_dir: "/rei/lp/"
           delete: "true"
           exclude: "'^logs/' '^README.md'"  
