@@ -31,7 +31,7 @@ jobs:
           git add -A
           git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
           git push --set-upstream https://github.com/websam2/LP-ClubeDoRei.git master
-      - name: 📂 Sync files
+      - name: 📂 Sync filessd
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ${{ secrets.ftp_host }}
