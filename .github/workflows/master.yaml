@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: 🚀 Deploy website on pus=hs
+name: 🚀 Deploy do sistema
 jobs:
   web-deploy:
     name: 🎉 Deploy
