@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: setup git auth
+      - name: Autenticação do Git
         env:
           email: thyybr@gmail.com
           username: thyybrandao
@@ -22,7 +22,7 @@ jobs:
           echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
           git config --global user.email $email
           git config --global user.name $username
-      - name: deploy to gh-pages
+      - name: Deploy para hostinger
         run: |
           npm i
           NODE_ENV=production npm run build
