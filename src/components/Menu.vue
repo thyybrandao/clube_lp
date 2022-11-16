@@ -45,11 +45,11 @@
           to=""
           >Promoções</router-link
         >
-
-        <label
-          for="login"
+        <a
+          target="_blank"
+          href="http://codelayers.com.br/rei/dash"
           class="hover:bg-yellow py-4 px-6 rounded-sm cursor-pointer"
-          >Entrar</label
+          >Entrar</a
         >
 
         <label
@@ -75,9 +75,6 @@
             <li @click="goTo(0)" class="hover:bg-yellow py-4 px-6 w-full">
               Sobre o Clube
             </li>
-            <!-- <li @click="goTo(1400)" class="hover:bg-yellow py-4 px-6 w-full">
-              Benefícios
-            </li> -->
             <li @click="goTo(900)" class="hover:bg-yellow py-4 px-6 w-full">
               Parceiros
             </li>
@@ -88,10 +85,6 @@
               Promoções
             </li>
 
-            <label for="login" class="hover:bg-yellow py-4 px-6 w-full"
-              >Entrar</label
-            >
-
             <label for="registration" class="hover:bg-yellow py-4 px-6 w-full"
               >Faça parte do clube</label
             >
@@ -100,8 +93,9 @@
       </button>
     </div>
   </div>
+
   <!-- Modal Login -->
-  <input type="checkbox" id="login" class="modal-toggle" />
+  <!-- <input type="checkbox" id="login" class="modal-toggle" />
   <div class="modal modal-bottom sm:modal-middle">
     <div class="flex flex-col rounded-xl p-10 bg-white">
       <div class="flex justify-end">
@@ -184,7 +178,7 @@
         >
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Modal Cadastro -->
   <input type="checkbox" id="registration" class="modal-toggle" />
@@ -208,14 +202,6 @@
           </svg>
         </label>
       </div>
-      <!-- <div class="flex justify-center">
-        <img
-          class="w-24 m-6 cursor-pointer"
-          src="/src/assets/logoReiChurrasquinho.svg"
-          alt="Rei do Churrasquinho"
-        />
-      </div> -->
-
       <div class="font-bold text-xl m-6">
         Preencha os campos para fazer o cadastro!
       </div>
@@ -251,34 +237,6 @@
           :validation-messages="{
             required: 'O campo está vazio',
             email: 'E-mail informado é inválido',
-          }"
-        />
-        <FormKit
-          outer-class="mx-5 mb-2"
-          input-class="input input-bordered rounded-md w-full "
-          type="select"
-          label-class="text-lg"
-          label="Cidade"
-          validation="required"
-          placeholder="Cidade"
-          message-class="ml-2 text-error text-xs"
-          :options="['Registro', 'Sete Barras', 'Jacupiranga']"
-          :validation-messages="{
-            required: 'O campo está vazio',
-          }"
-        />
-        <FormKit
-          outer-class="mx-5 mb-2"
-          input-class="input input-bordered rounded-md w-full"
-          type="select"
-          label-class="text-lg"
-          label="Estado"
-          validation="required"
-          placeholder="Estado"
-          message-class="ml-2 text-error text-xs"
-          :options="['São Paulo']"
-          :validation-messages="{
-            required: 'O campo está vazio',
           }"
         />
         <FormKit
@@ -334,11 +292,6 @@
           Cadastrar
         </button>
       </FormKit>
-      <!-- <div class="flex flex-col justify-center items-center">
-        <div class="m-4">________ ou ________</div>
-        <div>Possui uma conta?</div>
-        <label for="login" class="text-red underline">Fazer o Login</label>
-      </div> -->
     </div>
   </div>
 </template>
@@ -349,7 +302,7 @@ export default {
   components: {},
 
   methods: {
-    goTo(y) {
+     goTo(y) {
       window.scrollTo({
         top: y,
         behavior: "smooth",

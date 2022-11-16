@@ -13,14 +13,6 @@
       <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
       <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
       <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
-      <PromotionCard name="Nome do produto" real="R$10,00"></PromotionCard>
     </div>
   </div>
 </template>
