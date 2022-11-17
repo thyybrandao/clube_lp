@@ -47,7 +47,7 @@
         >
         <a
           target="_blank"
-          href="http://codelayers.com.br/rei/dash"
+          href="http://codeslayers.com.br/rei/dash/"
           class="hover:bg-yellow py-4 px-6 rounded-sm cursor-pointer"
           >Entrar</a
         >
