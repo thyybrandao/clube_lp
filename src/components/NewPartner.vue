@@ -16,7 +16,7 @@
         >
       </div>
 
-      <div class="lg:ml-10 lg:w-96 shadow-xl m-4">
+      <div class="lg:ml-10 lg:w-96 shadow-auto m-4">
         <label
           for="registration"
           class="btn sm:w-64 bg-red hover:bg-yellow rounded-3xl text-white hover:text-black border-0 mt-6 animate-pulse"
