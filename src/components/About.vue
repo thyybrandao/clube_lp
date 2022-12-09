@@ -1,19 +1,20 @@
 <template>
-  <div class="md:flex items-center justify-center w-full">
-    <div class="flex items-center lg:rounded-3xl p-4">
-      <div class="flex flex-col lg:ml-10">
+  <div class="md:flex justify-center">
+    <div class="flex flex-col md:flex-row items-center max-w-7xl p-8">
+      <div class="flex flex-col lg:ml-10 md:pl-8">
         <Title class="lg:mb-6 font-bold"
           ><span class="text-red">S</span>obre o Clube do Rei</Title
         >
-        <Subtitle class="md:w-[780px]"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur
-          tristique elit a facilisis. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia curae; Morbi scelerisque felis
-          ac ultricies sodales.</Subtitle
+        <Subtitle class="md:pr-24 xl:pr-60"
+          >Antes de abrir o meu restaurante, o Rei do Churrasquinho, eu tive
+          cerca de 20 negócios. Fui de cabeleireiro a dono de mercearia, mas
+          acabei me encontrando como ambulante: tive carrinho de churros e milho
+          verde até chegar aos churrasquinhos. Estamos desde 2010. <br>
+          O melhor espetinho de Registro. </Subtitle
         >
       </div>
-      <div class="" data-aos="fade-left">
-        <img src="../assets/about.png" alt="Promoções e descontos" />
+      <div class="md:w-full md:pr-12" data-aos="fade-left">
+        <img  src="../assets/about.png" alt="Promoções e descontos" />
       </div>
     </div>
   </div>

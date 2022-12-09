@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
+import TermPrivacy from "../components/TermPrivacy.vue";
 
 Vue.use(VueRouter);
 
@@ -29,6 +29,12 @@ const routes = [
     path: "*",
     name: "NotFound",
     component: NotFound,
+  },
+
+  {
+    path: "/termprivacy",
+    nome: "TermPrivacy",
+    component: TermPrivacy,
   },
 ];
 

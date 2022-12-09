@@ -4,14 +4,14 @@
     data-aos="fade-up"
   >
     <div class="flex flex-row">
-      <img src="../assets/mockup.png" alt="" />
-      <div class="flex flex-col justify-center m-10">
-        <Title class="text-white m-4">Baixe o App do Clube do Rei</Title>
+      <img class="" src="../assets/mockup.png" alt="" />
+      <div class="flex flex-col justify-center md:m-10">
+        <Title class="text-white md:m-4">Baixe o App do Clube do Rei</Title>
         <!-- <Subtitle class="text-white m-4"
           >Disponível para Android e iOS</Subtitle
         > -->
         <a href="#" target="_blank">
-          <img class="m-4 w-52" src="../assets/google-play-badge.png" alt="Baixe na Google Play" />
+          <img class="md:m-4 md:w-52" src="../assets/google-play-badge.png" alt="Baixe na Google Play" />
         </a>
       </div>
     </div>

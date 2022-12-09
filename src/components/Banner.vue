@@ -1,16 +1,16 @@
 <template>
-  <div class="md:flex flex-col items-center mt-24 m-4 max-w-7xl">
+  <div class="md:flex flex-col items-center md:mt-12 mt-20 m-5 md:m-0 max-w-7xl">
     <div class="flex flew-row items-center">
       <!-- Esquerdo -->
       <div class="flex flex-col">
-        <Title class="m-6 font-bold lg:ml-20"
+        <Title class="m-6 font-bold md:text-lg lg:ml-20"
           >Venha para o Clube do Rei e descubra o
           <span class="text-red">sabor da vida!</span>
         </Title>
 
         <button
-          @click="goTo(500)"
-          class="btn w-48 lg:ml-20 bg-yellow hover:bg-red rounded-3xl text-black hover:text-white border-0 m-6 motion-safe:animate-bounce"
+          @click="goTo(580)"
+          class="btn w-48 lg:ml-20 bg-yellow hover:bg-red rounded-3xl text-black hover:text-white border-0 m-6"
           data-aos="fade-right"
         >
           Ver benefícios
@@ -23,8 +23,8 @@
       </div>
 
       <!-- Direito -->
-      <div class="flex flex-row items-end w-1/2 lg:mr-20" data-aos="fade-left">
-        <div class="flex flex-row">
+      <div class="flex flex-row items-end  lg:mr-20" data-aos="fade-left">
+        <div class="hidden sm:flex flex-row lg:w-96 lg:mb-5 ">
           <img src="../assets/hero.png" alt="hero" />
         </div>
         <div class="flex flex-row lg:mb-20">
@@ -66,7 +66,7 @@
           Promoções no cardápio
         </h2>
         <p class="sm:text-xs lg:text-sm text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Cliente do clube terá desconto exclusivo. 
         </p>
       </div>
       <div class="m-4">
@@ -75,7 +75,7 @@
           Descontos em eventos
         </h2>
         <p class="sm:text-xs lg:text-sm text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Todos os eventos com desconto para os clientes do clube.
         </p>
       </div>
       <div class="m-4">
@@ -84,7 +84,7 @@
           Benefícios de parceiros
         </h2>
         <p class="sm:text-xs lg:text-sm text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Empresas parceiras do Clube será divulgado no app.
         </p>
       </div>
     </div>
