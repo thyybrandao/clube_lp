@@ -45,17 +45,25 @@
           to=""
           >Promoções</router-link
         >
-        <a
-          target="_blank"
-          href="http://codeslayers.com.br/rei/dash/"
-          class="hover:bg-yellow py-3 px-6 rounded-3xl cursor-pointer"
-          >Entrar</a
+
+        <router-link
+          @click="goTo(3700)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
+          to=""
+          >Baixe o APP!</router-link
         >
 
         <label
           for="registration"
           class="btn sm:text-xs lg:text-sm bg-yellow hover:bg-red rounded-3xl text-black hover:text-white border-0 ml-2"
           >Faça parte do Clube</label
+        >
+
+        <a
+          target="_blank"
+          href="http://codeslayers.com.br/rei/dash/"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl cursor-pointer ml-2"
+          >Painel administrativo</a
         >
       </ul>
 
@@ -185,7 +193,6 @@
           }"
         />
         <FormKit
-          
           outer-class="ml-6"
           wrapper-class="w-full flex flex-row "
           label-class="ml-2"
@@ -199,9 +206,7 @@
           }"
         >
           <template @click="docy" #label="context">
-            <router-link to="/termprivacy"
-              >Termo de Privacidade</router-link
-            >
+            <router-link to="/termprivacy">Termo de Privacidade</router-link>
             <!-- <span :class="context.classes.label"
               >Eu aceito o
               <a id="link" href="" to="../components/TermPrivacy.vue" target="_blank"
