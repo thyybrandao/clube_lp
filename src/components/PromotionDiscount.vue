@@ -2,7 +2,10 @@
   <div
     class="md:flex items-center justify-center bg-gradient-to-r from-orange to-yellow w-full"
   >
-    <div class="flex items-center bg-white lg:rounded-3xl lg:p-16 p-4 m-4" data-aos="fade-up">
+    <div
+      class="flex items-center bg-white lg:rounded-3xl lg:p-16 p-10 lg:m-20"
+      data-aos="fade-up"
+    >
       <div class="">
         <img src="../assets/group-promotion.png" alt="Promoções e descontos" />
       </div>
@@ -11,17 +14,15 @@
           ><span class="text-red">P</span>romoções e descontos</Title
         >
         <Subtitle class="md:w-[505px]"
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur
-          tristique elit a facilisis. Vestibulum ante ipsum primis in faucibus
-          orci luctus et ultrices posuere cubilia curae; Morbi scelerisque felis
-          ac ultricies sodales.</Subtitle
+          >No aplicativo você encontra promoção toda semana e com o clube você poderá ter desconto de até 20% no consumo.
+          Baixe no seu celular o aplicativo Clube do Rei e tenha benefícios e vantagens na palma da sua mão. #ClubedoRei </Subtitle
         >
         <label
           for="registration"
           class="btn sm:w-64 bg-yellow hover:bg-red rounded-3xl text-black hover:text-white border-0 mt-6 animate-pulse"
         >
           Faça parte do clube
-          <!-- <img class="m-2 w-4" src="../assets/chevrons-down.svg" alt="" /> -->
+      
         </label>
       </div>
     </div>

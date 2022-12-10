@@ -3,7 +3,7 @@
     class="fixed z-50 top-0 left-0 opacity-95 bg-white w-full shadow"
     data-aos="flip-up"
   >
-    <div class="flex justify-between items-center text-black m-4">
+    <div class="flex justify-between items-center text-black m-4 lg:ml-[10%]">
       <img
         @click="goTo('/')"
         class="pl-8 w-32 cursor-pointer"
@@ -12,43 +12,43 @@
       />
       <ul
         id="menu"
-        class="hidden lg:flex items-center text-base font-semibold cursor-pointer"
+        class="hidden lg:flex items-center text-base font-semibold cursor-pointer lg:mr-[10%]"
       >
         <router-link
-          @click="goTo(700)"
-          class="hover:bg-yellow py-4 px-6 rounded-sm"
+          @click="goTo(600)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
           to=""
           >Sobre o clube</router-link
         >
 
         <router-link
-          @click="goTo(1300)"
-          class="hover:bg-yellow py-4 px-6 rounded-sm"
+          @click="goTo(1350)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
           to=""
           >Benefícios</router-link
         >
         <router-link
-          @click="goTo(2000)"
-          class="hover:bg-yellow py-4 px-6 rounded-sm"
+          @click="goTo(2100)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
           to=""
           >Parceiros</router-link
         >
         <router-link
-          @click="goTo(2300)"
-          class="hover:bg-yellow py-4 px-6 rounded-sm"
+          @click="goTo(2700)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
           to=""
           >Seja um parceiro</router-link
         >
         <router-link
-          @click="goTo(2900)"
-          class="hover:bg-yellow py-4 px-6 rounded-sm"
+          @click="goTo(3200)"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl"
           to=""
           >Promoções</router-link
         >
         <a
           target="_blank"
           href="http://codeslayers.com.br/rei/dash/"
-          class="hover:bg-yellow py-4 px-6 rounded-sm cursor-pointer"
+          class="hover:bg-yellow py-3 px-6 rounded-3xl cursor-pointer"
           >Entrar</a
         >
 
@@ -93,92 +93,6 @@
       </button>
     </div>
   </div>
-
-  <!-- Modal Login -->
-  <!-- <input type="checkbox" id="login" class="modal-toggle" />
-  <div class="modal modal-bottom sm:modal-middle">
-    <div class="flex flex-col rounded-xl p-10 bg-white">
-      <div class="flex justify-end">
-        <label for="login" class="btn btn-circle btn-outline">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </label>
-      </div>
-      <div class="flex justify-center">
-        <img
-          class="w-24 m-6 cursor-pointer"
-          src="/src/assets/logoReiChurrasquinho.svg"
-          alt="Rei do Churrasquinho"
-        />
-      </div>
-
-      <div class="font-bold text-xl mb-6">
-        Preencha os campos e acesse sua conta!
-      </div>
-      <FormKit
-        type="form"
-        :actions="false"
-        @submit="login"
-        message-class="ml-8 text-error text-xs"
-        incomplete-message="Dados incompletos"
-      >
-        <FormKit
-          type="email"
-          label="E-mail"
-          input-class="input input-bordered w-full"
-          validation-visibility="live"
-          message-class="ml-2 text-error text-xs"
-          label-class="text-lg"
-          placeholder="email@exemplo.com"
-          validation="email|required"
-          :validation-messages="{
-            required: 'O campo está vazio',
-            email: 'E-mail informado é inválido',
-          }"
-        />
-        <FormKit
-          type="password"
-          label-class="text-lg"
-          input-class="input input-bordered w-full"
-          validation-visibility="live"
-          name="password"
-          label="Senha"
-          validation="required"
-          placeholder="****************"
-          message-class="ml-2 text-error text-xs"
-          :validation-messages="{
-            required: 'O campo está vazio',
-          }"
-        />
-
-        <button
-          @click="login()"
-          class="btn sm:w-full bg-yellow hover:bg-red rounded-3xl text-black hover:text-white border-0 mt-6"
-        >
-          Entrar
-        </button>
-      </FormKit>
-      <div class="flex flex-col justify-center items-center">
-        <div class="m-4">________ ou ________</div>
-        <div>Ainda não possui uma conta?</div>
-        <label for="registration" class="text-red underline cursor-pointer"
-          >Registre-se</label
-        >
-      </div>
-    </div>
-  </div> -->
 
   <!-- Modal Cadastro -->
   <input type="checkbox" id="registration" class="modal-toggle" />
@@ -271,6 +185,7 @@
           }"
         />
         <FormKit
+          
           outer-class="ml-6"
           wrapper-class="w-full flex flex-row "
           label-class="ml-2"
@@ -278,12 +193,23 @@
           label="Termos de uso e privacidade"
           name="terms"
           validation="accepted"
-          validation-visibility=""
           message-class="ml-2 text-error text-xs"
           :validation-messages="{
             accepted: 'Você precisa aceitar os termos de uso e privacidade ',
           }"
-        />
+        >
+          <template @click="docy" #label="context">
+            <router-link to="/termprivacy"
+              >Termo de Privacidade</router-link
+            >
+            <!-- <span :class="context.classes.label"
+              >Eu aceito o
+              <a id="link" href="" to="../components/TermPrivacy.vue" target="_blank"
+                >termo de uso e privacidade</a
+              >.</span
+            > -->
+          </template>
+        </FormKit>
 
         <button
           @click="register()"
@@ -302,12 +228,22 @@ export default {
   components: {},
 
   methods: {
-     goTo(y) {
+    goTo(y) {
       window.scrollTo({
         top: y,
         behavior: "smooth",
       });
     },
+    docy() {
+      console.log("teste");
+    },
   },
 };
 </script>
+
+<style scoped>
+#link {
+  font-style: italic;
+  color: red;
+}
+</style>
