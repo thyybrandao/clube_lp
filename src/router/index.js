@@ -36,6 +36,11 @@ const routes = [
     nome: "TermPrivacy",
     component: TermPrivacy,
   },
+  {
+    path: "/reset-password/:token",
+    nome: "ResetPassword",
+    component: TermPrivacy,
+  },
 ];
 
 const router = new Router({ routes });
